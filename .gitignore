@@ -1,0 +1,7 @@
+*
+!*/
+!.gitignore
+
+!pulsevolume.sh
+!pulsevolume.service.temp
+!Makefile

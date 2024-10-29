@@ -1,0 +1,13 @@
+[Unit]
+Description=Updates /var/pulsevolume/data using pulse api
+After=sound.target
+Requires=sound.target
+
+[Service]
+ExecStart=/usr/local/bin/pulsevolume.sh
+Restart=always
+User=<user>
+Environment=XDG_RUNTIME_DIR=/run/user/<user_id>
+
+[Install]
+WantedBy=multi-user.target
